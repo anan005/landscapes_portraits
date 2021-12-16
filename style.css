@@ -1,0 +1,685 @@
+/* HEADER */
+
+:root {
+    --clr-primary-red: #d72322;
+    --clr-primary-green: #4cb260;
+  }
+
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* END OF HEADER */
+
+  /* NAVIGATION */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+    /* landscapes */
+
+.gotoland {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--clr-primary-green);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    width: 125px;
+    height: 80px;
+    transition: all .5s ease-out;
+}
+
+.gotoland span {
+    padding: 0 5%;
+}
+
+.gotoland:hover {
+    width: 100vw;
+    height: 80px;
+}
+
+#see-land {
+    display: none;
+}
+
+.gotoland:hover #see-land{
+    display: inline;
+}
+
+.gotoland:hover #landgone{
+    display: none;
+}
+
+.gotoland:hover #cover-landscapes{
+    display: none;
+}
+
+
+.inland {
+    width: 100vw;
+}
+
+
+    /* portraits */
+
+
+.gotoport {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--clr-primary-red);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+    width: 80px;
+    height: 125px;
+    transition: all 0.5s ease-in-out;
+}
+
+.gotoport span {
+    padding: 5% 0;
+}
+
+.gotoport:hover {
+    width: 80px;
+    height: 100vh;
+}
+
+#see-port {
+    display: none;
+    writing-mode: vertical-lr;
+}
+
+
+.gotoport:hover #see-port{
+    display: inline;
+}
+
+#cover-portraits {
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.gotoport:hover #cover-portraits{
+    display: none;
+}
+
+.inport {
+    height: 100vh;
+}
+
+.portrait-back {
+    writing-mode: vertical-lr;
+}
+
+
+/* IPAD */
+
+
+@media (max-width: 800px) {
+
+    /* landscapes */
+
+    .gotoland {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--clr-primary-green);
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+        border-radius: .5px;
+        width: 100vw;
+        height: 5vh;
+        transform: rotate(180deg);
+        transition: none;
+    }
+
+    .gotoland span {
+        padding: 0 5%;
+    }
+
+     #see-land {
+        display: none;
+    }
+
+    /* portraits */
+
+    .gotoport {
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--clr-primary-red);
+        box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+        border-radius: .5px;
+        width: 8vw;
+        height: 95vh;
+        transition: none;
+    }
+
+    .gotoport span {
+        padding: 5% 0;
+    }
+
+    #see-port {
+        display: none;
+    }
+
+    #cover-portraits {
+        writing-mode: vertical-lr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    #see-port {
+        writing-mode: vertical-lr;
+    }
+
+    .portrait-back {
+        writing-mode: vertical-lr;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+    }
+
+}
+
+/* IPHONE SE */
+
+
+@media (max-width:350px) {
+
+    /* landscapes */
+
+    .gotoland {
+        position: relative;
+        font-size: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: var(--clr-primary-green);
+        box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+        width: 100vw;
+        height: 5vh;
+        transform: rotate(180deg);
+        transition: none;
+    }
+
+    .gotoland span {
+        padding: 0 5%;
+    }
+
+    #see-land {
+        display: none;
+    }
+
+    /* portraits */
+
+    .gotoport {
+        font-size: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: var(--clr-primary-red);
+        box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+        width: 10vw;
+        height: 95vh;
+        transition: none;
+    }
+
+    .gotoport span {
+        padding: 5% 0;
+    }
+
+    #see-port {
+        display: none;
+    }
+
+    #cover-portraits {
+        writing-mode: vertical-lr;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    #see-port {
+        writing-mode: vertical-lr;
+    }
+}    
+
+/* END OF NAVIGATION */
+
+/* INDEX */
+
+.hello-morten {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 30% 20%;
+    position: absolute;
+    z-index: 2000;
+}
+
+.morten-content-port {
+    position: fixed;
+    font-size: 20px;
+    height: 100%;
+    padding: 25%;
+}
+
+.morten-content-land {
+    position: fixed;
+    font-size: 20px;
+    height: 100%;
+    padding: 25%;
+}
+
+@media (max-width:800px) {
+
+    .hello-morten {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        padding: 30% 20%;
+        position: absolute;
+        z-index: 2000;
+    }
+
+    .morten-content-port {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        left: 5%;
+        padding: 30% 15%;
+        position: absolute;
+        height: 100%;
+    }
+
+    .morten-content-land {
+        position: fixed;
+        transform: rotate(90deg);
+        font-size: 20px;
+        padding: 5%;
+        top: 35%;
+        height: 35%;
+        display: flex;
+        flex-direction: row;
+    }
+  
+}
+
+@media (max-width:350px) {
+    .hello-morten {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 30% 20%;
+        position: absolute;
+        z-index: 2000;
+    }
+
+    .morten-content-port {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        padding: 30% 20%;
+        position: absolute;
+        height: 100%;
+    }
+
+    .morten-content-land {
+        position: fixed;
+        transform: rotate(90deg);
+        font-size: 16px;
+        padding: 0%;
+        top: 30%;
+        height: 40%;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+
+/* PICTURES OF LANDSCAPES */
+
+.horizont-scroll {
+    /* background-color: indigo; */
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    transform: translate(0px, 0px);
+}
+
+.land {
+    align-items: center;
+    position: relative;
+    /* background-color: hotpink; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.book-title {
+    text-align: center;
+    transform: translate(0px, 0px);
+    font-size: 80px;
+}
+
+.land img {
+    width: 700px;
+}
+
+.fotoname {
+    text-align: center;
+    font-size: 16px;
+    width: 100vw;
+}
+
+
+@media (max-width:1000px) {
+
+    .horizont-scroll {
+        /* background-color: indigo; */
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        transform: translate(0px, 0px);
+    }
+
+    .land {
+        position: relative;
+        /* background-color: hotpink; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+
+    .book-title {
+        text-align: center;
+        transform: translate(0px, 0px);
+        font-size: 50px;
+    }
+
+    .land img {
+        width: 450px;
+    }
+
+    .fotoname {
+        text-align: center;
+        font-size: 16px;
+        width: 100vw;
+    }
+}
+
+@media (max-width:800px) {
+
+    .horizont-scroll {
+        /* background-color: indigo; */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(140px, -100px);
+    }
+
+    .land {
+        position: relative;
+        /* background-color: hotpink; */
+        justify-content: start;
+        transform: rotate(90deg);
+        display: flex;
+        flex-direction: column;
+        width: 0vw;
+        height: 100vh;
+        padding-left: 0px;
+        align-items: flex-start;
+    }
+    
+    .book-title {
+        transform: translate(0px, 190px);
+        font-size: 50px;
+    }
+
+    .land img {
+        width: 600px;
+    }
+
+    .fotoname {
+        font-size: 16px;
+        width: 100vw;
+        text-align: start;
+    }
+}
+
+@media (max-width:350px) {
+
+    .horizont-scroll {
+        /* background-color: rgb(145, 87, 187); */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(0px, -100px);
+    }
+
+    .land {
+        position: relative;
+        /* background-color: hotpink; */
+        transform: rotate(90deg);
+        justify-content: start;
+        display: flex;
+        flex-direction: column;
+        width: 0vw;
+        height: 100vh;
+        margin-bottom: 150px;
+        padding-left: 0px;
+        align-items: flex-start;
+
+    }
+    
+    .book-title {
+        transform: translate(-40px, 70px);
+        font-size: 50px;
+    }
+
+    .land img {
+        width: 250px;
+    }
+
+    .fotoname {
+        font-size: 12px;
+        width: 100vw;
+    }
+}
+
+
+
+/* PORTRAITS PICTURES */
+
+
+    .vertical-scroll {
+        /* background-color: rgb(145, 87, 187); */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        scroll-behavior: smooth;
+    }
+
+    .port {
+        /* background-color: hotpink; */
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 150px;
+        padding-left: 10vw;
+
+    }
+    
+    .book-title {
+        transform: translate(0px, 0px);
+        font-size: 50px;
+    }
+
+    .port img {
+        width: 450px;
+    }
+
+    .fotoname {
+        text-align: center;
+        font-size: 16px;
+        width: 100vw;
+    }
+
+
+@media (max-width:1000px) {
+
+    .vertical-scroll {
+        /* background-color: rgb(145, 87, 187); */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .port {
+        /* background-color: hotpink; */
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 150px;
+        padding-left: 10vw;
+
+    }
+    
+    .book-title {
+        transform: translate(0px, 0px);
+        font-size: 50px;
+    }
+
+    .port img {
+        width: 450px;
+    }
+
+    .fotoname {
+        text-align: center;
+        font-size: 16px;
+        width: 100vw;
+    }
+}
+
+@media (max-width:800px) {
+
+    .vertical-scroll {
+        /* background-color: rgb(145, 87, 187); */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .port {
+        /* background-color: hotpink; */
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 150px;
+        padding-left: 10vw;
+
+    }
+    
+    .book-title {
+        transform: translate(0px, 0px);
+        font-size: 50px;
+    }
+
+    .port img {
+        width: 400px;
+    }
+
+    .fotoname {
+        text-align: center;
+        font-size: 16px;
+        width: 100vw;
+    }
+}
+
+@media (max-width:500px) {
+    .port img {
+        width: 300px;
+    }
+}
+
+@media (max-width:350px) {
+
+    .vertical-scroll {
+        /* background-color: rgb(145, 87, 187); */
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .port {
+        /* background-color: hotpink; */
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        margin-bottom: 150px;
+        padding-left: 10vw;
+
+    }
+    
+    .book-title {
+        transform: translate(0px, 0px);
+        font-size: 50px;
+    }
+
+    .port img {
+        width: 250px;
+    }
+
+    .fotoname {
+        text-align: center;
+        font-size: 12px;
+        width: 100vw;
+    }
+}
+

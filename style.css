@@ -542,9 +542,8 @@ nav {
         flex-direction: column;
         width: 100vw;
         height: 100vh;
-        margin-bottom: 150px;
-        padding-left: 10vw;
-
+        margin-bottom: 0px;
+        padding-left: 0vw;
     }
     
     .book-title {

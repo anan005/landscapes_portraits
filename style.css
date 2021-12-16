@@ -278,7 +278,7 @@ nav {
     justify-content: center;
     padding: 30% 20%;
     position: absolute;
-    z-index: 2000;
+    z-index: 500;
 }
 
 .morten-content-port {
@@ -303,7 +303,7 @@ nav {
         justify-content: center;
         padding: 30% 20%;
         position: absolute;
-        z-index: 2000;
+        z-index: 1000;
     }
 
     .morten-content-port {
@@ -336,7 +336,7 @@ nav {
         justify-content: center;
         padding: 30% 20%;
         position: absolute;
-        z-index: 2000;
+        z-index: 1000;
     }
 
     .morten-content-port {
